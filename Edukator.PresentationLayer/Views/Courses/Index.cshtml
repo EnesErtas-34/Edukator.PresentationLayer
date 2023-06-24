@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_DefaultLayout.cshtml";
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+
+
+<body>
+  >
+    @await Component.InvokeAsync("_CoursesBannerPartial")
+  
+    @await Component.InvokeAsync("_CoursesFeaturePartial")
+    <!--//-->
+    <!--/popular-Courses-->
+    @await Component.InvokeAsync("_CoursePartial") 
+    <!--//popular-Courses-->
+    <!--/footer-->
+    
+    
+
+</body>
+
+</html>

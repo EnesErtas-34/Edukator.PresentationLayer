@@ -1,0 +1,42 @@
+﻿@model Edukator.EntityLayer.Concrete.ContactInfo
+@{
+    ViewData["Title"] = "UpdateContactInfo";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-sm-12 col-xl-12">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">İletişim Bilgileri Güncelleme Sayfası</h6>
+        <form method="post">
+            <input type="hidden" asp-for="ContactInfoID" />
+            <div class="mb-3">
+                <label for="Adres1" class="form-label">Adres1</label>
+                <input type="text" class="form-control" id="Adres1" asp-for="Address1" />
+            </div>
+            <div class="mb-3">
+                <label for="Adres2" class="form-label">Adres2</label>
+                <input type="text" class="form-control" id="Adres2" asp-for="Address2" />
+            </div>
+            <div class="mb-3">
+                <label for="Mail1" class="form-label">Mail1</label>
+                <input type="text" class="form-control" id="Mail1" asp-for="Mail1" />
+            </div>
+            <div class="mb-3">
+                <label for="Mail2" class="form-label">Mail2</label>
+                <input type="text" class="form-control" id="Mail2" asp-for="Mail2" />
+            </div>
+            <div class="mb-3">
+                <label for="Telefon1" class="form-label">Telefon1</label>
+                <input type="text" class="form-control" id="Telefon1" asp-for="Phone1" />
+            </div>
+            <div class="mb-3">
+                <label for="Telefon2" class="form-label">Telefon2</label>
+                <input type="text" class="form-control" id="Telefon2" asp-for="Phone2" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </form>
+    </div>
+</div>
+
+

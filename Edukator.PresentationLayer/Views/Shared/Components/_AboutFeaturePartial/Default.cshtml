@@ -1,0 +1,37 @@
+﻿@model List<Edukator.EntityLayer.Concrete.AboutFeature>
+<section class="w3l-features py-5" id="work">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="row main-cont-wthree-2 align-items-center">
+           
+            <div class="col-lg-6 feature-grid-left pr-lg-5">
+                <h5 class="title-subw3hny">Neden Bizi Seçmelisiniz</h5>
+                @foreach (var item in Model)
+                {
+                    <h3 class="title-w3l mb-4">
+                        @item.Title
+                    </h3>
+                    <p class="text-para">
+                        @item.Description
+                    </p>
+                }
+                    <a href="about.html" class="btn btn-style btn-primary mt-lg-5 mt-4">Read More</a>
+                </div>
+           
+          
+	
+            <div class="col-lg-6 feature-grid-right mt-lg-0 mt-5 pl-lg-5">
+                <div class="call-grids-w3 d-grid">
+                    @foreach (var item in Model)
+                    {
+                        <div class="grids-1 box-wrap">
+                            <div class="icon">
+                                <i class="@item.Icon"></i>
+                            </div>
+                            <h4><a href="about.html" class="title-head">@item.IconText</a></h4>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

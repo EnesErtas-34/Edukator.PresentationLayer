@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_DefaultLayout.cshtml";
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+<body>
+    @await Component.InvokeAsync("_ContactBannerPartial")
+
+    @await Component.InvokeAsync("_ContactInfoPartial")
+
+    @await Html.PartialAsync("SendMessage")
+
+    @await Component.InvokeAsync("_ContactMapPartial")
+
+</body>
+
+</html>
+
